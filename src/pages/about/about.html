@@ -6,6 +6,11 @@
   </ion-navbar>
 </ion-header>
 
-<ion-content padding>
-
+<ion-content>
+    <ion-item>
+        <ion-card padding *ngFor="let history of resultado">
+            <p class="card-title">{{history.tipo}} </p>
+            <p class="card-subtitle">{{history.info}} </p>
+        </ion-card>
+    </ion-item>
 </ion-content>
