@@ -13,6 +13,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 //Plugins
 import { BarcodeScanner } from '@ionic-native/barcode-scanner';
 import { HistorialProvider } from '../providers/historial/historial';
+import { InAppBrowser } from '@ionic-native/in-app-browser';
 
 @NgModule({
   declarations: [
@@ -39,7 +40,8 @@ import { HistorialProvider } from '../providers/historial/historial';
     SplashScreen,
     BarcodeScanner,
     {provide: ErrorHandler, useClass: IonicErrorHandler},
-    HistorialProvider
+    HistorialProvider,
+    InAppBrowser
   ]
 })
 export class AppModule {}
